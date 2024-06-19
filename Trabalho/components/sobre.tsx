@@ -10,7 +10,9 @@ export default function App(){
             return (
                 <View style={styles.container}>
                     <Text style={styles.title}>Página Sobre</Text>
-                    <TouchableOpacity style={styles.button} onPress={() => setPage('home')}>
+                  
+                    <TouchableOpacity style={styles.button} onPress={() => setPage('home')}>  
+                    
                         <Text style={styles.buttonText}> Clique aqui</Text>
                     </TouchableOpacity>
                 </View>
@@ -37,13 +39,12 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     button: {
-        backgroundColor: '#FFF',
+        backgroundColor: '#fff',
         padding: 10,
         borderRadius: 5,
     },
-
     buttonText: {
-        color:'#FFFF',
+        color:'#000',
         fontSize: 16,
     },
 });
