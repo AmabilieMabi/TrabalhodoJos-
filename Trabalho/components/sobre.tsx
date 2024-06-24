@@ -7,8 +7,7 @@ export default function App(){
 
     const renderPage = () => {
         if (page === 'sobre') {
-            return (
-                <View style={styles.container}>
+            return ( <View style={styles.container}>
                     <Text style={styles.title}>Localiser</Text>
                     <Image style={styles.image} source={require('../assets/images/mapinha.png')}/> 
                     <Text style={styles.title}> Localização atual </Text>
@@ -17,18 +16,14 @@ export default function App(){
                     </TouchableOpacity> <br></br>
                     <TouchableOpacity style={styles.button}>  
                         <Text style={styles.buttonText1}> Longitude: 00.00</Text>
-                    </TouchableOpacity>
-                    <br></br>
-                    <Image style={styles.image1} source={require('../assets/images/paris.png')}/> 
-                    <br></br>
+                    </TouchableOpacity><br></br>
+                    <Image style={styles.image1} source={require('../assets/images/paris.png')}/>  <br></br>
                     <TouchableOpacity style={styles.button}>  
                         <Text style={styles.buttonText}> Obter localização </Text>
                     </TouchableOpacity> <br></br>
                     <TouchableOpacity style={styles.button} onPress={() => setPage('home')}>  
                         <Text style={styles.buttonText}> Voltar para pagina inicial </Text>
-                    </TouchableOpacity>
-                    
-                </View>
+                    </TouchableOpacity> </View>
             );
         } else if (page === 'home'){
             return <Home/>;
@@ -44,7 +39,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#D1CCF3',
-
     },
     image:{
         width:300,
@@ -52,7 +46,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         borderRadius: 5,
     },
-
     image1:{
         width:300,
         height:200,
@@ -67,8 +60,7 @@ const styles = StyleSheet.create({
         color: '#000',
         marginBottom: 20,
         justifyContent: 'center',
-    },
-    
+    }, 
     button: {
         backgroundColor: '#fff',
         padding: 10,
@@ -76,12 +68,10 @@ const styles = StyleSheet.create({
         borderWidth: 3,
         borderColor: "#000",
     },
-
     buttonText: {
         color:'#000',
         fontSize: 16,
     },
-
     buttonText1: {
         color:'#2F006C',
         fontSize: 16,
